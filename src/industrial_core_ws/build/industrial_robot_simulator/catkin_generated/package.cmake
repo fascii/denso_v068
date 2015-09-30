@@ -1,0 +1,8 @@
+set(_CATKIN_CURRENT_PACKAGE "industrial_robot_simulator")
+set(industrial_robot_simulator_VERSION "0.4.1")
+set(industrial_robot_simulator_MAINTAINER "Shaun Edwards <sedwards@swri.org>")
+set(industrial_robot_simulator_BUILD_DEPENDS "std_msgs" "sensor_msgs" "control_msgs" "trajectory_msgs" "industrial_msgs" "roslaunch")
+set(industrial_robot_simulator_RUN_DEPENDS "std_msgs" "sensor_msgs" "control_msgs" "trajectory_msgs" "industrial_robot_client" "industrial_msgs" "python-rospkg" "rospy")
+set(industrial_robot_simulator_DEPRECATED "")
+set(industrial_robot_simulator_BUILDTOOL_DEPENDS "catkin")
+set(industrial_robot_simulator_BUILD_DEPENDS_roslaunch_VERSION_GTE "1.9.55")

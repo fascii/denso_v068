@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(moveit_config)
+
+find_package(catkin REQUIRED COMPONENTS roscpp 
+					control_msgs 
+					trajectory_msgs 
+					actionlib 
+					actionlib_msgs
+)
+add_action_files(FILES JointTrajectory FollowJointTrajectory 
+)
+generate_messages(DEPENDENCIES actionlib_msgs std_msgs
+)
+catkin_package(CATKIN_DEPENDS actionlib_msgs
+)
+
+
+add_executable(full_action_server src/full_action_server.cpp)
+target_link_libraries(full_action_server ${catkin_LIBRARIES})
+
+#install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+#install(DIRECTORY config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "industrial_core")
+set(industrial_core_MAINTAINER "Shaun Edwards <sedwards@swri.org>")
+set(industrial_core_DEPRECATED "")
+set(industrial_core_VERSION "0.4.1")
+set(industrial_core_BUILD_DEPENDS )
+set(industrial_core_RUN_DEPENDS "simple_message" "industrial_msgs" "industrial_robot_client" "industrial_robot_simulator" "industrial_deprecated" "industrial_utils" "industrial_trajectory_filters")
+set(industrial_core_BUILDTOOL_DEPENDS "catkin")

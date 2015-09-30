@@ -1,0 +1,8 @@
+prefix=/home/johnfaski/industrial_core_ws/devel
+
+Name: industrial_utils
+Description: Description of industrial_utils
+Version: 0.4.1
+Cflags: -I/home/johnfaski/industrial_core_ws/src/industrial_utils/include
+Libs: -L/home/johnfaski/industrial_core_ws/devel/lib -lindustrial_utils
+Requires: roscpp urdf

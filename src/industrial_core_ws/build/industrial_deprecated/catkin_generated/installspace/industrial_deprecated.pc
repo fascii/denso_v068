@@ -1,0 +1,8 @@
+prefix=/home/johnfaski/industrial_core_ws/install
+
+Name: industrial_deprecated
+Description: Description of industrial_deprecated
+Version: 0.4.1
+Cflags: 
+Libs: -L/home/johnfaski/industrial_core_ws/install/lib 
+Requires: 
