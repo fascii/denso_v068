@@ -1,16 +1,22 @@
 <robot name="denso_vs068A2-AV6-NNN-AA">
 
 	<link name="base">
+	  <inertial>
+	    <mass value="3.021"/>
+	    <inertia ixx="0.043" ixy="0.001" ixz="-0.0002229" iyy="0.028" iyz="0.001" izz="0.04"/>
+	  </inertial>
+
 	  <visual>
 	    <origin rpy="1.5707 0 0" xyz="0 0 0"/>
 	    <geometry>
-		<mesh filename="file:///home/johnfaski/ros_ws/src/v068_description/meshes/baselink.stl"/>
+	      <mesh filename="file:///home/johnfaski/ros_ws/src/v068_description/meshes/baselink.stl"/>
 	    </geometry>
 	    <material name="white">
 		<color rgba="1 1 1 1"/>
 	    </material>
 	  </visual>
 	</link>
+
 	
 	<joint name="joint1" type="revolute">
 		<parent link="base"/>
@@ -20,17 +26,24 @@
 		<limit lower="-2.967" upper="2.967" velocity="7.8539" effort="30"/>
 	</joint>
 
+
 	<link name="link1">
-	 <visual>
+	  <inertial>
+	    <mass value="3.378"/>
+	    <inertia ixx="0.036" ixy="0.0008138" ixz="-0.004" iyy="0.047" iyz="0.003" izz="0.033"/>
+	  </inertial>
+
+	  <visual>
 	    <origin xyz="-4.5 -4.75 0" rpy="0 0 0" />
 	    <geometry>
 		<mesh filename="file:///home/johnfaski/ros_ws/src/v068_description/meshes/link1.stl"/>
 	    </geometry>
 	    <material name="white">
 		<color rgba="1 1 1 1"/>
-	    </material>
+	     </material>
 	  </visual>
 	</link> 
+
 
 	<joint name="joint2" type="revolute">
 		<parent link="link1"/>
@@ -40,7 +53,13 @@
 		<limit lower="-1.7453" upper="2.3562" velocity="6.2831" effort="30"/>
 	</joint>
 
+
 	<link name="link2">
+	  <inertial>
+	    <mass value="7.415"/>
+	    <inertia ixx="0.132" ixy="-0.0000203" ixz="0.004" iyy="0.141" iyz="-0.003" izz="0.034"/>
+	  </inertial>
+
 	 <visual>
 	   <origin xyz="-5.8 -3.6 -3.2" rpy="0 0 0" />
 	    <geometry>
@@ -52,6 +71,7 @@
 	  </visual>
 	</link> 
 
+
 	<joint name="joint3" type="revolute">
 		<parent link="link2"/>
 		<child link="link3"/>
@@ -60,7 +80,13 @@
 		<limit lower="-2.0944" upper="2.6704" velocity="8.9011" effort="30"/>
 	</joint>
 
+
 	<link name="link3"> 
+	 <inertial>
+	    <mass value="1.667"/>
+	    <inertia ixx="0.016" ixy="-0.0003414" ixz="0.00003526" iyy="0.007" iyz="0.0009762" izz="0.016"/>
+	 </inertial>
+
 	 <visual>
 	    <origin xyz="-2.25 -7.75 -3" rpy="0 0 0" />
 	    <geometry>
@@ -72,6 +98,7 @@
 	  </visual>
 	</link>
 
+
 	<joint name="joint4" type="revolute">
 		<parent link="link3"/>
 		<child link="link4"/>
@@ -79,8 +106,14 @@
 		<axis xyz="0 1 0" />
 		<limit lower="-4.7124" upper="4.7124" velocity="9.4247" effort="16.2"/>
 	</joint>
+
 	
 	<link name="link4">
+	  <inertial>
+	    <mass value="1.113"/>
+	    <inertia ixx="0.006" ixy="0.0001422" ixz="-0.00001215" iyy="0.003" iyz="-0.00004461" izz="0.006"/>
+	  </inertial>
+
 	 <visual>
 	    <origin xyz="-2.3 -6.4 -2.25" rpy="0 0 0"/>
 	    <geometry>
@@ -92,6 +125,7 @@
 	  </visual>
 	</link>
 
+
 	<joint name="joint5" type="revolute">
 		<parent link="link4"/>
 		<child link="link5"/>
@@ -100,9 +134,15 @@
 		<limit lower="-2.0944" upper="2.0944" velocity="9.4247" effort="16.2"/>
 	</joint>
 
+
 	<link name="link5">
+	  <inertial>
+	    <mass value="0.514"/>
+	    <inertia ixx="0.0007611" ixy="-0.000009129" ixz="0.0000001314" iyy="0.0003968" iyz="-0.000008609" izz="0.0006775"/>
+	  </inertial>
+
 	 <visual>
-	    <origin xyz="-1.5 -3.52 -1.75" rpy="0 0 0" />
+	    <origin xyz="-1.4 -3.52 -1.75" rpy="0 0 0" />
 	    <geometry>
 		<mesh filename="file:///home/johnfaski/ros_ws/src/v068_description/meshes/link5.stl"/>
 	    </geometry>

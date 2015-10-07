@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /home/johnfaski/ros_ws/src/v068_description/URDF/denso_vs068A2-AV6-NNN-AA.urdf
+  SRDF:
+    relative_path: config/denso_vs068A2-AV6-NNN-AA.srdf
+  CONFIG:
+    generated_timestamp: 1444225606
